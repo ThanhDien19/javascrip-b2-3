@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Login</div>
+            <div class="card-body">
+              <div class="form-group">
+                <input
+                  id="txtUsername"
+                  class="form-control"
+                  type="text"
+                  value="Cybersoft"
+                />
+              </div>
+              <div class="form-group">
+                <input id="txtPassword" class="form-control" type="text" />
+              </div>
+              <button id="btnLogin" class="btn btn-success">Login</button>
+            </div>
+            <div id="footerLogin" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <hr />
+    <!-- <input id="txtNumber_1" type="text" placeholder="number 1" />
+    <input id="txtNumber_2" type="text" placeholder="number 2" />
+    <button id="btnCong" class="btn btn-success">Cộng</button>
+    <div id="thongBao" class="demo"></div> -->
+
+    <hr />
+    <!-- <button id="btnOff" class="btn btn-light">Off</button>
+    <img id="imgPic" src="./images/pic_bulboff.gif" alt="" />
+    <button id="btnOn" class="btn btn-warning">On</button>
+    <button id="btnDisableBtnOn" class="btn btn-info">Disable button On</button>
+    <button id="enableBtnOn" class="btn btn-success">Enable button On</button> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính tiền típ</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Tổng tiền thanh toán?</label>
+                <input id="txtTongTien" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Bạn muốn típ bao nhiêu?</label>
+                <select id="phanTramTip" class="form-control">
+                  <option value="10">10%</option>
+                  <option value="20">20%</option>
+                  <option value="30">30%</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="">Muốn chia bao nhiêu người?</label>
+                <input id="soNguoi" type="text" class="form-control" />
+              </div>
+              <button id="btnTinh" class="btn btn-danger">Tính</button>
+            </div>
+            <div id="footerTienTip" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="divContent"></div>
+    <!-- <button id="btnCreateP" class="btn btn-info">Tạo thẻ p</button> -->
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính lợi nhuận</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Tên phim</label>
+                <input id="txtTenPhim" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập giá vé người lớn</label>
+                <input id="giaVeNguoiLon" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập giá vé trẻ em</label>
+                <input id="giaVeTreEm" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Số lượng vé người lớn</label>
+                <input id="slVeNguoiLon" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Số lượng vé trẻ em</label>
+                <input id="slVeTreEm" type="text" class="form-control" />
+              </div>
+              <button id="btnTinhLoiNhuan" class="btn btn-danger">Tính</button>
+            </div>
+            <div id="footerLoiNhuan" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính tiền lương nhân viên</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập số ngày làm</label>
+                <input id="txtSoNgayLam" type="text" class="form-control" />
+              </div>
+              <button id="btnTinhLuongNV" class="btn btn-danger">
+                Tính lương nhân viên
+              </button>
+            </div>
+            <div id="footerTinhLuongNV" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính giá trị trung bình</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập số thứ 1</label>
+                <input id="txtSo_1" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập số thứ 2</label>
+                <input id="txtSo_2" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập số thứ 3</label>
+                <input id="txtSo_3" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập số thứ 4</label>
+                <input id="txtSo_4" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="">Nhập số thứ 5</label>
+                <input id="txtSo_5" type="text" class="form-control" />
+              </div>
+              <button id="btnTinhTB" class="btn btn-danger">Tính TB</button>
+            </div>
+            <div id="footerTinhTB" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Quy đổi tiền USD => VND</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="">Nhập số tiền USD</label>
+                <input id="txtUSD" type="text" class="form-control" />
+              </div>
+              <button id="btnVND" class="btn btn-danger">Quy đổi VND</button>
+            </div>
+            <div id="footerTinhVND" class="card-footer text-muted"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
